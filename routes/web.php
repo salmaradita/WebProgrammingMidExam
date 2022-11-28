@@ -22,5 +22,6 @@ Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/book_detail/{id}', [HomeController::class, 'bookdetail'])->name('book_detail');
 Route::get('/publisher', [PublisherController::class, 'publisher'])->name('publisher');
 Route::get('/publisher_detail/{id}', [PublisherController::class, 'publisherdetail'])->name('publisherdetail');
-Route::get('/category/{categories}', [CategoryController::class, 'bookcategories'])->name('categories');
+Route::get('/category', [CategoryController::class, 'index'])->name('index');
+Route::get('/category/{category}', [CategoryController::class, 'bookcategories'])->name('category');
 Route::get('/contact', [ContactController::class, 'contact'])->name('contact');

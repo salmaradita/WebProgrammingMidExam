@@ -10,7 +10,7 @@
     </div>
     <div class="row">
         <div class="card mb-3">
-            <img src="{{ $book->image }}" class="w-full" alt="...">
+            <img src="{{ $book->image }}" class="w-full" alt="bookcover1">
             <div class="card-body">
                 <p class="card-text">Title: {{ $book->title }}</p>
                 <p class="card-text">Author: {{ $book->author }}</p>
